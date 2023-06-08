@@ -1,6 +1,5 @@
 
-package ajou.aiot.samples;
-
+package sample;
 import java.io.IOException;
 import java.util.Properties;
 

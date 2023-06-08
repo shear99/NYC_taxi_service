@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-logging-1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/org.apache.servicemix.bundles.jzlib-1.0.7_2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/sol-jcsmp-10.19.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/solace-messaging-client-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/org.osgi.annotation-6.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/solace-messaging-client-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Library/solace-messaging-client-1.2.0/lib/org.osgi.annotation-6.0.0.jar!/OSGI-OPT/src" />
+    </SOURCES>
+  </library>
+</component>

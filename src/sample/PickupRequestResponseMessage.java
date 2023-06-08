@@ -1,5 +1,4 @@
-package ajou.aiot.samples;
-
+package sample;
 public class PickupRequestResponseMessage {
 	int TIMESTAMP;
 	int DRIVERID;

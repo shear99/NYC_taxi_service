@@ -1,5 +1,5 @@
 
-package ajou.aiot.samples;
+package sample;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -26,24 +26,16 @@ public class DriverApp {
 	
     /** Simple application for doing pub/sub. */
     public static void main(String... args) throws IOException, InterruptedException {
-    	
-    	
-        if (args.length < 4) {  // Check command line arguments
-            System.out.printf("Usage: DriverApp <host:port> <message-vpn> <client-username> <password> <DriverID>%n", "DriverApp");            
-            System.exit(-1);
-        }
         
         Gson gson = new Gson();
         final Properties properties = new Properties();
-        properties.setProperty(TransportLayerProperties.HOST, args[0]);          // host:port
-        properties.setProperty(ServiceProperties.VPN_NAME,  args[1]);     // message-vpn
-        properties.setProperty(AuthenticationProperties.SCHEME_BASIC_USER_NAME, args[2]);      // client-username
-        if (args.length > 3) {
-            properties.setProperty(AuthenticationProperties.SCHEME_BASIC_PASSWORD, args[3]);  // client-password
-        }
-        if (args.length > 4) {
-        	driverId=Integer.parseInt(args[4]);
-        }
+        properties.setProperty(TransportLayerProperties.HOST, Prop.host);          // host:port
+        properties.setProperty(ServiceProperties.VPN_NAME,  Prop.vpn);     // message-vpn
+        properties.setProperty(AuthenticationProperties.SCHEME_BASIC_USER_NAME, Prop.user);      // client-username
+        properties.setProperty(AuthenticationProperties.SCHEME_BASIC_PASSWORD, Prop.password);  // client-password
+        driverId=Integer.parseInt(Prop.driverID);
+
+
         properties.setProperty(ServiceProperties.RECEIVER_DIRECT_SUBSCRIPTION_REAPPLY, "true");  // subscribe Direct subs after reconnect
 
         final MessagingService messagingService = MessagingService.builder(ConfigurationProfile.V1)

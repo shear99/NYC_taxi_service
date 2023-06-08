@@ -1,5 +1,4 @@
-package ajou.aiot.samples;
-
+package sample;
 import java.util.ArrayList;
 import java.util.Random;
 

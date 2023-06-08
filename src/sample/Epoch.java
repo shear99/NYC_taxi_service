@@ -1,5 +1,4 @@
-package ajou.aiot.samples;
-
+package sample;
 public class Epoch {
 	public static final int getSec() {
 		return (int) (getMsec()/1000);

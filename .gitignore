@@ -29,3 +29,7 @@ bin/
 .DS_Store
 
 sample/Prop.java
+.idea/libraries/gson_2_10_1.xml
+.idea/libraries/commons_logging_1_2.xml
+.idea/git_toolbox_prj.xml
+.idea/workspace.xml
